@@ -14,7 +14,15 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@ng-mf/data-access": ["data-access/src/index.ts"],
+      "@ng-mf/shared/data-access": ["shared/data-access/src/index.ts"],
+      "@ng-mf/shared/data-access-user": [
+        "shared/data-access-user/src/index.ts"
+      ],
+      "login/Module": ["login/src/app/remote-entry/entry.module.ts"],
+      "transaction/Module": ["transaction/src/app/remote-entry/entry.module.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
